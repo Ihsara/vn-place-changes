@@ -1,0 +1,25 @@
+@font-face { font-family: "Be Vietnam Pro"; font-weight: 400; font-display: swap; src: url("fonts/bvp-400.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-weight: 600; font-display: swap; src: url("fonts/bvp-600.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-weight: 700; font-display: swap; src: url("fonts/bvp-700.woff2") format("woff2"); }
+:root { --paper: #faf8f3; --ink: #2b2b2b; --muted: #666666; --arrived: #2f6db5; --gone: #d9691f; --unconfirmed: #b9b9b9; --rule: #e4e0d6; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 400 18px/1.6 "Be Vietnam Pro", system-ui, sans-serif; }
+.story { max-width: 40rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }          /* ~66 cpl at 18px */
+.kicker { font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+h1 { font-weight: 700; font-size: clamp(1.7rem, 4.5vw, 2.4rem); line-height: 1.2; margin: .3rem 0 .8rem; }
+h2 { font-weight: 600; font-size: 1.3rem; margin: 2.5rem 0 .6rem; }
+.deck { font-style: italic; font-size: 1.25em; color: #4a4a4a; }
+figure { margin: 1.4rem 0; }
+.chart svg { display: block; font: 400 13px "Be Vietnam Pro", sans-serif; font-variant-numeric: tabular-nums; }
+.num, [data-n] { font-variant-numeric: tabular-nums; }
+.note { fill: var(--muted); font-size: 12px; }
+.key::before { content: ""; display: inline-block; width: .8em; height: .8em; margin: 0 .35em 0 .9em; vertical-align: -.05em; }
+.key.arrived::before { background: var(--arrived); } .key.gone::before { background: var(--gone); }
+.key.unconfirmed::before { background: repeating-linear-gradient(45deg, var(--unconfirmed) 0 2px, transparent 2px 5px); outline: 1px solid var(--unconfirmed); }
+figcaption { font-size: .85rem; color: var(--muted); }
+.caveat { font-size: .92rem; color: #555; border-left: 3px solid var(--rule); padding-left: .8rem; }
+aside#not { margin-top: 3rem; padding: 1.2rem 1.2rem .4rem; background: #f1eee6; border-radius: 6px; }
+.method { margin-top: 3rem; font-size: .9rem; color: #444; border-top: 1px solid var(--rule); }
+.source { color: var(--muted); }
+.error { background: #fde8e0; padding: 1rem; margin: 0; }
+@media (max-width: 480px) { body { font-size: 17px; } .story { padding: 1.5rem 1rem 3rem; } }

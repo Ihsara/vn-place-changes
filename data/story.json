@@ -1,0 +1,588 @@
+{
+ "schema_version": 1,
+ "built_at": "2026-10-08T00:58:20",
+ "edition": {
+  "base_month": "2026-04",
+  "confirmed": [
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08"
+  ],
+  "pending_month": "2026-09",
+  "latest_confirmed": "2026-08",
+  "n_confirmed": 4
+ },
+ "f1": {
+  "months": [
+   {
+    "month": "2026-05",
+    "arrived": 162622,
+    "gone": 155069,
+    "flicker": 514,
+    "net": 7553,
+    "meta_share_arrived": 0.999,
+    "meta_share_gone": 0.999
+   },
+   {
+    "month": "2026-06",
+    "arrived": 16,
+    "gone": 1241,
+    "flicker": 9,
+    "net": -1225,
+    "meta_share_arrived": 0.0,
+    "meta_share_gone": 0.925
+   },
+   {
+    "month": "2026-07",
+    "arrived": 191998,
+    "gone": 243245,
+    "flicker": 185482,
+    "net": -51247,
+    "meta_share_arrived": 1.0,
+    "meta_share_gone": 0.99
+   },
+   {
+    "month": "2026-08",
+    "arrived": 106828,
+    "gone": 58629,
+    "flicker": 16438,
+    "net": 48199,
+    "meta_share_arrived": 0.996,
+    "meta_share_gone": 0.998
+   }
+  ],
+  "totals": {
+   "base_stock": 1495302,
+   "latest_stock": 1508605,
+   "arrived": 461464,
+   "gone": 458184,
+   "flow_net": 3280,
+   "replaced_pct": 30.6,
+   "net_pct": 0.9,
+   "net_pct_abs": 0.9,
+   "meta_share": 0.996
+  }
+ },
+ "f2": {
+  "kind": "smoke_and_vape_store",
+  "base": 661,
+  "arrived": 792,
+  "gone": 381,
+  "net": 411,
+  "rate": 62.2,
+  "july_stock": 986,
+  "latest_stock": 1105,
+  "series": [
+   {
+    "month": "2026-04",
+    "stock": 661,
+    "pending": false
+   },
+   {
+    "month": "2026-05",
+    "stock": 632,
+    "pending": false
+   },
+   {
+    "month": "2026-06",
+    "stock": 632,
+    "pending": false
+   },
+   {
+    "month": "2026-07",
+    "stock": 986,
+    "pending": false
+   },
+   {
+    "month": "2026-08",
+    "stock": 1105,
+    "pending": false
+   },
+   {
+    "month": "2026-09",
+    "stock": 1172,
+    "pending": true
+   }
+  ],
+  "name_lens": {
+   "kind": "vape",
+   "net": 432,
+   "rate": 40.6
+  },
+  "provinces": [
+   {
+    "name": "Hồ Chí Minh",
+    "arrived": 448,
+    "gone": 176,
+    "net": 272
+   },
+   {
+    "name": "Đồng Nai",
+    "arrived": 125,
+    "gone": 114,
+    "net": 11
+   },
+   {
+    "name": "Hà Nội",
+    "arrived": 93,
+    "gone": 57,
+    "net": 36
+   },
+   {
+    "name": "Lâm Đồng",
+    "arrived": 57,
+    "gone": 3,
+    "net": 54
+   },
+   {
+    "name": "Cần Thơ",
+    "arrived": 22,
+    "gone": 3,
+    "net": 19
+   },
+   {
+    "name": "rest",
+    "arrived": 47,
+    "gone": 28,
+    "net": 19
+   }
+  ],
+  "legal": {
+   "instrument": "Resolution No. 173/2024/QH15",
+   "in_force": "2025-01-01"
+  }
+ },
+ "f4": {
+  "kinds": [
+   {
+    "kind": "bank",
+    "base": 1043,
+    "latest": 915,
+    "net": -120,
+    "rate": -11.5
+   },
+   {
+    "kind": "atm",
+    "base": 1737,
+    "latest": 1537,
+    "net": -211,
+    "rate": -12.1
+   },
+   {
+    "kind": "investing",
+    "base": 627,
+    "latest": 513,
+    "net": -119,
+    "rate": -19.0
+   },
+   {
+    "kind": "financial_advising",
+    "base": 1349,
+    "latest": 1150,
+    "net": -218,
+    "rate": -16.2
+   },
+   {
+    "kind": "college_university",
+    "base": 5196,
+    "latest": 4686,
+    "net": -524,
+    "rate": -10.1
+   }
+  ],
+  "all_places_rate": 0.9,
+  "cities": {
+   "hcmc": {
+    "name": "Hồ Chí Minh",
+    "rate": 1.0,
+    "churn": 56.4,
+    "bank_rate": -17.5,
+    "atm_rate": -14.1
+   },
+   "hanoi": {
+    "name": "Hà Nội",
+    "rate": -0.0,
+    "churn": 71.2,
+    "bank_rate": -24.0,
+    "atm_rate": -21.2
+   }
+  }
+ },
+ "sidebar": {
+  "flicker": [
+   {
+    "month": "2026-05",
+    "flicker": 514
+   },
+   {
+    "month": "2026-06",
+    "flicker": 9
+   },
+   {
+    "month": "2026-07",
+    "flicker": 185482
+   },
+   {
+    "month": "2026-08",
+    "flicker": 16438
+   }
+  ],
+  "provinces": [
+   {
+    "name": "Cao Bằng",
+    "base": 2656,
+    "net": 196,
+    "rate": 7.4
+   },
+   {
+    "name": "Hưng Yên",
+    "base": 22436,
+    "net": 1359,
+    "rate": 6.1
+   },
+   {
+    "name": "Lạng Sơn",
+    "base": 5082,
+    "net": 294,
+    "rate": 5.8
+   },
+   {
+    "name": "Ninh Bình",
+    "base": 30234,
+    "net": 1629,
+    "rate": 5.4
+   },
+   {
+    "name": "Thanh Hóa",
+    "base": 25830,
+    "net": 1319,
+    "rate": 5.1
+   },
+   {
+    "name": "Quảng Ngãi",
+    "base": 15559,
+    "net": 752,
+    "rate": 4.8
+   },
+   {
+    "name": "Hà Tĩnh",
+    "base": 9135,
+    "net": 417,
+    "rate": 4.6
+   },
+   {
+    "name": "Quảng Ninh",
+    "base": 21759,
+    "net": 1006,
+    "rate": 4.6
+   },
+   {
+    "name": "Lai Châu",
+    "base": 1458,
+    "net": 65,
+    "rate": 4.5
+   },
+   {
+    "name": "Hải Phòng",
+    "base": 50016,
+    "net": 1977,
+    "rate": 4.0
+   },
+   {
+    "name": "Vĩnh Long",
+    "base": 19143,
+    "net": 764,
+    "rate": 4.0
+   },
+   {
+    "name": "Đồng Nai",
+    "base": 48048,
+    "net": 1818,
+    "rate": 3.8
+   },
+   {
+    "name": "Cà Mau",
+    "base": 10358,
+    "net": 380,
+    "rate": 3.7
+   },
+   {
+    "name": "Quảng Trị",
+    "base": 14152,
+    "net": 530,
+    "rate": 3.7
+   },
+   {
+    "name": "Đắk Lắk",
+    "base": 28784,
+    "net": 977,
+    "rate": 3.4
+   },
+   {
+    "name": "Tây Ninh",
+    "base": 22195,
+    "net": 703,
+    "rate": 3.2
+   },
+   {
+    "name": "An Giang",
+    "base": 26100,
+    "net": 782,
+    "rate": 3.0
+   },
+   {
+    "name": "Nghệ An",
+    "base": 23748,
+    "net": 711,
+    "rate": 3.0
+   },
+   {
+    "name": "Đồng Tháp",
+    "base": 19739,
+    "net": 585,
+    "rate": 3.0
+   },
+   {
+    "name": "Gia Lai",
+    "base": 28691,
+    "net": 791,
+    "rate": 2.8
+   },
+   {
+    "name": "Bắc Ninh",
+    "base": 35470,
+    "net": 971,
+    "rate": 2.7
+   },
+   {
+    "name": "Cần Thơ",
+    "base": 31557,
+    "net": 813,
+    "rate": 2.6
+   },
+   {
+    "name": "Huế",
+    "base": 20780,
+    "net": 500,
+    "rate": 2.4
+   },
+   {
+    "name": "Lâm Đồng",
+    "base": 48831,
+    "net": 1114,
+    "rate": 2.3
+   },
+   {
+    "name": "Khánh Hòa",
+    "base": 34426,
+    "net": 759,
+    "rate": 2.2
+   },
+   {
+    "name": "Lào Cai",
+    "base": 14430,
+    "net": 249,
+    "rate": 1.7
+   },
+   {
+    "name": "Đà Nẵng",
+    "base": 80769,
+    "net": 1110,
+    "rate": 1.4
+   },
+   {
+    "name": "Hồ Chí Minh",
+    "base": 403282,
+    "net": 3873,
+    "rate": 1.0
+   },
+   {
+    "name": "Hà Nội",
+    "base": 291025,
+    "net": -6,
+    "rate": -0.0
+   },
+   {
+    "name": "Sơn La",
+    "base": 5861,
+    "net": -513,
+    "rate": -8.8
+   },
+   {
+    "name": "Điện Biên",
+    "base": 2690,
+    "net": -346,
+    "rate": -12.9
+   },
+   {
+    "name": "Phú Thọ",
+    "base": 48254,
+    "net": -9780,
+    "rate": -20.3
+   },
+   {
+    "name": "Tuyên Quang",
+    "base": 17157,
+    "net": -3798,
+    "rate": -22.1
+   },
+   {
+    "name": "Thái Nguyên",
+    "base": 33161,
+    "net": -8339,
+    "rate": -25.1
+   }
+  ],
+  "bottom3": [
+   {
+    "name": "Phú Thọ",
+    "rate": -20.3
+   },
+   {
+    "name": "Tuyên Quang",
+    "rate": -22.1
+   },
+   {
+    "name": "Thái Nguyên",
+    "rate": -25.1
+   }
+  ],
+  "purge": {
+   "kind": "professional_service",
+   "base": 93383,
+   "latest": 72177,
+   "rate": -23.7,
+   "july_gone": 41476,
+   "share_of_bottom3_loss": 0.922
+  },
+  "downtown": {
+   "wards": [
+    "Hoàn Kiếm",
+    "Sài Gòn",
+    "Bến Thành",
+    "Nha Trang",
+    "Xuân Hương - Đà Lạt",
+    "Vũng Tàu"
+   ],
+   "series": [
+    {
+     "month": "2026-04",
+     "stock": 14222,
+     "pending": false
+    },
+    {
+     "month": "2026-05",
+     "stock": 14366,
+     "pending": false
+    },
+    {
+     "month": "2026-06",
+     "stock": 14361,
+     "pending": false
+    },
+    {
+     "month": "2026-07",
+     "stock": 13371,
+     "pending": false
+    },
+    {
+     "month": "2026-08",
+     "stock": 13532,
+     "pending": false
+    },
+    {
+     "month": "2026-09",
+     "stock": 14165,
+     "pending": true
+    }
+   ],
+   "base": 14222,
+   "latest_confirmed": 13532,
+   "confirmed_net": -773,
+   "july_net": -1013
+  }
+ },
+ "claims": {
+  "C1": {
+   "holds": true,
+   "rule": "f1.totals.replaced_pct >= 20 and abs(f1.totals.net_pct) <= 2",
+   "value": {
+    "replaced_pct": 30.6,
+    "net_pct": 0.9
+   }
+  },
+  "C2": {
+   "holds": true,
+   "rule": "f2.net > 0 and f2.rate >= 25 and f2.name_lens.net > 0",
+   "value": {
+    "net": 411,
+    "rate": 62.2,
+    "name_net": 432
+   }
+  },
+  "C2b": {
+   "holds": true,
+   "rule": "top province by f2 arrivals (excluding 'rest') is 'Hồ Chí Minh'",
+   "value": "Hồ Chí Minh"
+  },
+  "C3": {
+   "holds": true,
+   "rule": "f2.latest_stock >= f2.july_stock",
+   "value": {
+    "latest": 1105,
+    "july": 986
+   }
+  },
+  "C4": {
+   "holds": true,
+   "rule": ">= 3 of 5 f4.kinds have rate <= -5 and f4.all_places_rate > median(f4 kind rates)",
+   "value": {
+    "thin": 5,
+    "median": -12.1,
+    "all": 0.9
+   }
+  },
+  "C5": {
+   "holds": true,
+   "rule": "f4.cities.hcmc.rate > f4.cities.hanoi.rate",
+   "value": {
+    "hcmc": 1.0,
+    "hanoi": -0.0
+   }
+  },
+  "C6": {
+   "holds": true,
+   "rule": "July flicker > 0 and >= 10 x median flicker of the other confirmed months",
+   "value": {
+    "july": 185482,
+    "median_other": 514
+   }
+  },
+  "C7": {
+   "holds": true,
+   "rule": "sidebar.bottom3 names == {Thái Nguyên, Tuyên Quang, Phú Thọ} and purge.share_of_bottom3_loss >= 0.5",
+   "value": {
+    "bottom3": [
+     "Phú Thọ",
+     "Thái Nguyên",
+     "Tuyên Quang"
+    ],
+    "share": 0.922
+   }
+  },
+  "C8": {
+   "holds": true,
+   "rule": "sidebar.downtown.confirmed_net < 0 and abs(july_net) >= 0.8 x abs(confirmed_net)",
+   "value": {
+    "confirmed_net": -773,
+    "july_net": -1013
+   }
+  },
+  "C9": {
+   "holds": true,
+   "rule": "f1.totals.meta_share >= 0.9",
+   "value": 0.996
+  }
+ }
+}
