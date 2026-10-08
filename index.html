@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vietnam's Changing Map</title>
 <meta name="description" content="What changed in Vietnam's open map of places, month by month — and how much of it is the data source reshuffling.">
-<link rel="stylesheet" href="story.css?v=0.3.0">
+<link rel="stylesheet" href="story.css?v=0.4.0">
 </head>
 <body>
 <main class="story">
@@ -57,6 +57,17 @@
   <figure><div id="downtown" class="chart" role="img" aria-label="Hotel, restaurant and café listings in six downtown wards by month; newest month hatched"></div></figure>
 </aside>
 
+<section id="posters">
+  <h2>Posters</h2>
+  <p class="source">Four A3 plates of this edition, confirmed through <span data-n="edition.latest_confirmed" data-fmt="month"></span>. Free to print.</p>
+  <div class="plates">
+    <a href="posters/plate-1.pdf"><img src="posters/plate-1.png" alt="Plate 1: listings that arrived or left, by province" loading="lazy" width="400"></a>
+    <a href="posters/plate-2.pdf"><img src="posters/plate-2.png" alt="Plate 2: vape and smoke shop listings that arrived, by province" loading="lazy" width="400"></a>
+    <a href="posters/plate-3.pdf"><img src="posters/plate-3.png" alt="Plate 3: net change in bank and ATM listings, by province" loading="lazy" width="400"></a>
+    <a href="posters/plate-4.pdf"><img src="posters/plate-4.png" alt="Plate 4: net change in all listings, by province" loading="lazy" width="400"></a>
+  </div>
+</section>
+
 <footer class="method">
   <h2>How this was counted</h2>
   <p>A place <em>arrived</em> when it was absent from one Overture release and listed in the next two; it is <em>gone</em> when it was listed for two releases and then absent for two. One-month appearances and the newest, not-yet-confirmed month (<span data-n="edition.pending_month" data-fmt="month"></span>) are never counted as change. Counts are listings, not verified openings or closures. Rates compare net change with the first month and are not shown for fewer than 20 places.</p>
@@ -64,6 +75,6 @@
 </footer>
 </main>
 <script src="vendor/d3.v7.min.js"></script>
-<script type="module" src="story.js?v=0.3.0"></script>
+<script type="module" src="story.js?v=0.4.0"></script>
 </body>
 </html>

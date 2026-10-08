@@ -21,5 +21,6 @@ figcaption { font-size: .85rem; color: var(--muted); }
 aside#not { margin-top: 3rem; padding: 1.2rem 1.2rem .4rem; background: #f1eee6; border-radius: 6px; }
 .method { margin-top: 3rem; font-size: .9rem; color: #444; border-top: 1px solid var(--rule); }
 .source { color: var(--muted); }
+.plates { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1rem; } .plates img { width: 100%; height: auto; border: 1px solid var(--rule); }
 .error { background: #fde8e0; padding: 1rem; margin: 0; }
 @media (max-width: 480px) { body { font-size: 17px; } .story { padding: 1.5rem 1rem 3rem; } }
