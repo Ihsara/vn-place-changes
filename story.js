@@ -1,4 +1,4 @@
-import { fillSlots, fmt } from "./format.js";
+import { fillSlots, fmt } from "./format.js?v=0.3.0";
 const d3 = window.d3;
 const C = { arrived: "var(--arrived)", gone: "var(--gone)", ink: "var(--ink)", muted: "var(--muted)" };
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vietnam's Changing Map</title>
 <meta name="description" content="What changed in Vietnam's open map of places, month by month — and how much of it is the data source reshuffling.">
-<link rel="stylesheet" href="story.css">
+<link rel="stylesheet" href="story.css?v=0.3.0">
 </head>
 <body>
 <main class="story">
@@ -26,7 +26,7 @@
 <section id="vape">
   <h2>Vape shop listings kept appearing — after a ban</h2>
   <!-- C2, C3 -->
-  <p>Vietnam banned the production, trade and import of e-cigarettes and heated tobacco from 1 January 2025 (National Assembly <span data-n="f2.legal.instrument" data-fmt="text"></span>). Yet listings of vape and smoke shops rose from <span data-n="f2.base"></span> to <span data-n="f2.latest_stock"></span>: <span data-n="f2.arrived"></span> arrived and <span data-n="f2.gone"></span> left, a net change of <span data-n="f2.rate" data-fmt="signedpct1"></span>%.</p>
+  <p>Vietnam banned the production, trade and import of e-cigarettes and heated tobacco from 1 January 2025 (National Assembly <span data-n="f2.legal.instrument" data-fmt="text"></span>). Yet between <span data-n="edition.base_month" data-fmt="month"></span> and <span data-n="edition.latest_confirmed" data-fmt="month"></span>, <span data-n="f2.arrived"></span> vape and smoke shop listings arrived and <span data-n="f2.gone"></span> left — a net gain of <span data-n="f2.net"></span>, or <span data-n="f2.rate" data-fmt="signedpct1"></span>% of the <span data-n="f2.base"></span> listed in <span data-n="edition.base_month" data-fmt="month"></span>.</p>
   <figure><div id="vape-line" class="chart" role="img" aria-label="Confirmed vape and smoke shop listings by month; the newest month hatched as unconfirmed"></div></figure>
   <!-- C2b -->
   <p>Hồ Chí Minh City had more new listings than any other province. A second check that reads only the names — places called "vape" or "pod" — also rose, by <span data-n="f2.name_lens.rate" data-fmt="signedpct1"></span>%. The count had not fallen below its July level — the month Meta reshuffled its data — by <span data-n="edition.latest_confirmed" data-fmt="month"></span>.</p>
@@ -64,6 +64,6 @@
 </footer>
 </main>
 <script src="vendor/d3.v7.min.js"></script>
-<script type="module" src="story.js"></script>
+<script type="module" src="story.js?v=0.3.0"></script>
 </body>
 </html>

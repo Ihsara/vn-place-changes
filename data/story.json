@@ -573,7 +573,7 @@
   },
   "C8": {
    "holds": true,
-   "rule": "sidebar.downtown.confirmed_net < 0 and abs(july_net) >= 0.8 x abs(confirmed_net)",
+   "rule": "sidebar.downtown.confirmed_net < 0 and july_net < 0 and abs(july_net) >= 0.8 x abs(confirmed_net)",
    "value": {
     "confirmed_net": -773,
     "july_net": -1013
