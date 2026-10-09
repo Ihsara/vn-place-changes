@@ -2,59 +2,60 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vietnam's Changing Map</title>
-<meta name="description" content="What changed in Vietnam's open map of places, month by month — and how much of it is the data source reshuffling.">
-<link rel="stylesheet" href="story.css?v=0.4.1">
+<title>Reshuffled: Overture's Place Listings for Vietnam</title>
+<meta name="description" content="How Overture Maps' place listings for Vietnam changed over the confirmed months, almost all of the changed entries coming from Meta: how much of the data was swapped in and out, and which kinds of listing shifted on net. Listing changes, not openings or closures.">
+<link rel="stylesheet" href="story.css?v=0.4.2">
 </head>
 <body>
 <main class="story">
 <header>
-  <p class="kicker">Vietnam · Overture Maps places · confirmed listing changes</p>
-  <!-- C1 -->
-  <h1>Vietnam's map swapped out <span data-n="f1.totals.replaced_pct" data-fmt="pct1"></span>% of its places in <span data-n="edition.n_confirmed"></span> months. Its size moved <span data-n="f1.totals.net_pct_abs" data-fmt="pct1"></span>%.</h1>
-  <p class="deck">Most of what changes on a map from one month to the next is the data source reshuffling. A few kinds of places really did move.</p>
+  <p class="kicker">Overture Maps places · listings for Vietnam · confirmed listing changes</p>
+  <!-- C1, C9 -->
+  <h1>In <span data-n="edition.n_confirmed"></span> months, Overture's listings for Vietnam swapped out entries equal to <span data-n="f1.totals.replaced_pct" data-fmt="pct1"></span>% of their starting count. Their total moved <span data-n="f1.totals.net_pct_abs" data-fmt="pct1"></span>%.</h1>
+  <p class="deck">Most of the change was entries swapped in and out, almost all of them from Meta. The total barely moved.</p>
 </header>
 
 <section id="churn">
   <figure><div id="hero" class="chart" role="img" aria-label="Confirmed arrivals above the line and departures below it, by month; July's one-month listings hatched"></div>
   <figcaption><span class="key arrived">arrived</span> <span class="key gone">gone</span> <span class="key unconfirmed">listed one month only</span></figcaption></figure>
   <!-- C1, C9 -->
-  <p>Between <span data-n="edition.base_month" data-fmt="month"></span> and <span data-n="edition.latest_confirmed" data-fmt="month"></span>, Overture's open map of places added <span data-n="f1.totals.arrived"></span> places in Vietnam and dropped <span data-n="f1.totals.gone"></span>. Each change is confirmed by two monthly releases in a row, so one-month blips are not counted. The map started with <span data-n="f1.totals.base_stock"></span> places.</p>
-  <p>Almost all of it comes from one source: Meta supplied <span data-n="f1.totals.meta_share" data-fmt="share1"></span>% of the places that arrived or left. When Meta reshuffles its listings, the map churns — whatever happened on the street.</p>
+  <p>Between <span data-n="edition.base_month" data-fmt="month"></span> and <span data-n="edition.latest_confirmed" data-fmt="month"></span>, Overture's place listings for Vietnam gained <span data-n="f1.totals.arrived"></span> entries and dropped <span data-n="f1.totals.gone"></span>. Each change is confirmed by two monthly releases in a row, so one-month blips are not counted. The listings started with <span data-n="f1.totals.base_stock"></span> entries.</p>
+  <p>Almost all of it comes from one source: Meta supplied <span data-n="f1.totals.meta_share" data-fmt="share1"></span>% of the listings that arrived or left. With Meta the source of almost every listing that moved, the listings alone cannot say whether a change happened on the street, in Meta's data, or in Overture's processing.</p>
 </section>
 
 <section id="vape">
-  <h2>Vape shop listings kept appearing — after a ban</h2>
+  <h2>More vape shop listings arrived than left, after a ban</h2>
   <!-- C2, C3 -->
-  <p>Vietnam banned the production, trade and import of e-cigarettes and heated tobacco from 1 January 2025 (National Assembly <span data-n="f2.legal.instrument" data-fmt="text"></span>). Yet between <span data-n="edition.base_month" data-fmt="month"></span> and <span data-n="edition.latest_confirmed" data-fmt="month"></span>, <span data-n="f2.arrived"></span> vape and smoke shop listings arrived and <span data-n="f2.gone"></span> left — a net gain of <span data-n="f2.net"></span>, or <span data-n="f2.rate" data-fmt="signedpct1"></span>% of the <span data-n="f2.base"></span> listed in <span data-n="edition.base_month" data-fmt="month"></span>.</p>
-  <figure><div id="vape-line" class="chart" role="img" aria-label="Confirmed vape and smoke shop listings by month; the newest month hatched as unconfirmed"></div></figure>
-  <!-- C2b -->
-  <p>Hồ Chí Minh City had more new listings than any other province. A second check that reads only the names — places called "vape" or "pod" — also rose, by <span data-n="f2.name_lens.rate" data-fmt="signedpct1"></span>%. The count had not fallen below its July level — the month Meta reshuffled its data — by <span data-n="edition.latest_confirmed" data-fmt="month"></span>.</p>
+  <p>Vietnam banned the production, trade and import of e-cigarettes and heated tobacco from 1 January 2025 (National Assembly <span data-n="f2.legal.instrument" data-fmt="text"></span>). Between <span data-n="edition.base_month" data-fmt="month"></span> and <span data-n="edition.latest_confirmed" data-fmt="month"></span>, <span data-n="f2.arrived"></span> vape and smoke shop listings arrived in the data and <span data-n="f2.gone"></span> left — a net gain of <span data-n="f2.net"></span> listings, or <span data-n="f2.rate" data-fmt="pct1"></span>% of the <span data-n="f2.base"></span> listed in <span data-n="edition.base_month" data-fmt="month"></span>.</p>
+  <figure><figcaption class="axis">Vape and smoke shop listings, confirmed (hatched = not yet)</figcaption><div id="vape-line" class="chart" role="img" aria-label="Confirmed vape and smoke shop listings by month; the newest month hatched as unconfirmed"></div></figure>
+  <!-- C2b, C2, C3 -->
+  <p>No province's listings took in more vape and smoke shop arrivals than Hồ Chí Minh City's. A second check that reads only the names — listings called "vape" or "pod" — also gained on net: <span data-n="f2.name_lens.rate" data-fmt="pct1"></span>%. By <span data-n="edition.latest_confirmed" data-fmt="month"></span>, vape and smoke shop listings had not fallen below their July count.</p>
   <figure><div id="vape-provinces" class="chart" role="img" aria-label="New vape listings by province"></div></figure>
   <p class="caveat">These are listings, not inspected shops. A listing can outlive its shop, or advertise one that never opened.</p>
 </section>
 
 <section id="finance">
-  <h2>Finance listings thinned while the map held steady</h2>
+  <!-- C4, C1 -->
+  <h2>Most of five kinds, from banks to universities, lost listings while the dataset barely changed in size</h2>
   <!-- C4 -->
-  <p>Across Vietnam, bank listings changed <span data-n="f4.kinds[0].rate" data-fmt="signedpct1"></span>%, ATMs <span data-n="f4.kinds[1].rate" data-fmt="signedpct1"></span>%, investment firms <span data-n="f4.kinds[2].rate" data-fmt="signedpct1"></span>%, financial advisers <span data-n="f4.kinds[3].rate" data-fmt="signedpct1"></span>% and universities <span data-n="f4.kinds[4].rate" data-fmt="signedpct1"></span>% — against <span data-n="f4.all_places_rate" data-fmt="signedpct1"></span>% for all places.</p>
-  <figure><div id="finance-chart" class="chart" role="img" aria-label="Change in finance listings against the change for all places"></div></figure>
+  <p>Across the listings for Vietnam, bank listings changed by <span data-n="f4.kinds[0].rate" data-fmt="signedpct1"></span>% on net, ATM listings <span data-n="f4.kinds[1].rate" data-fmt="signedpct1"></span>%, investment-firm listings <span data-n="f4.kinds[2].rate" data-fmt="signedpct1"></span>%, financial-adviser listings <span data-n="f4.kinds[3].rate" data-fmt="signedpct1"></span>% and university listings <span data-n="f4.kinds[4].rate" data-fmt="signedpct1"></span>% — against <span data-n="f4.all_places_rate" data-fmt="signedpct1"></span>% for all listings.</p>
+  <figure><div id="finance-chart" class="chart" role="img" aria-label="Net change in five kinds of listing, banks to universities, against all listings"></div></figure>
   <!-- C5 -->
-  <p>In Hồ Chí Minh City banks changed <span data-n="f4.cities.hcmc.bank_rate" data-fmt="signedpct1"></span>% and in Hà Nội <span data-n="f4.cities.hanoi.bank_rate" data-fmt="signedpct1"></span>%. Overall, Hồ Chí Minh City's listings changed <span data-n="f4.cities.hcmc.rate" data-fmt="signedpct1"></span>%, more than Hà Nội's <span data-n="f4.cities.hanoi.rate" data-fmt="signedpct1"></span>%.</p>
-  <p class="caveat">Listings can't tell a closed branch from one Meta stopped listing. With <span data-n="f4.kinds[0].base"></span> banks in the data at the start, a small number of listings can move these rates.</p>
+  <p>In Hồ Chí Minh City, bank listings changed <span data-n="f4.cities.hcmc.bank_rate" data-fmt="signedpct1"></span>% and in Hà Nội <span data-n="f4.cities.hanoi.bank_rate" data-fmt="signedpct1"></span>%. Overall, Hồ Chí Minh City's net change in listings, <span data-n="f4.cities.hcmc.rate" data-fmt="signedpct1"></span>%, was higher than Hà Nội's <span data-n="f4.cities.hanoi.rate" data-fmt="signedpct1"></span>%.</p>
+  <p class="caveat">Listings can't tell a closed branch from one Meta stopped listing. With <span data-n="f4.kinds[0].base"></span> bank listings at the start, a small number of listings can move these rates.</p>
 </section>
 
 <aside id="not">
   <h2>What a listing change is not</h2>
   <!-- C6 -->
-  <p>In July, <span data-n="sidebar.flicker[2].flicker"></span> places appeared for one month only and vanished the next. They are drawn hatched and never counted as arrivals.</p>
-  <figure><div id="flicker" class="chart" role="img" aria-label="Places listed for one month only, by month"></div></figure>
+  <p>In July, <span data-n="sidebar.flicker[2].flicker"></span> listings appeared for one month only and vanished the next. They are drawn hatched and never counted as arrivals.</p>
+  <figure><div id="flicker" class="chart" role="img" aria-label="Listings that appeared for one month only, by month"></div></figure>
   <!-- C7 -->
-  <p>Three northern provinces — <span data-n="sidebar.bottom3[0].name" data-fmt="text"></span>, <span data-n="sidebar.bottom3[1].name" data-fmt="text"></span> and <span data-n="sidebar.bottom3[2].name" data-fmt="text"></span> — fell furthest, in percent. Most of their loss is one category, "professional service", which changed nationally by <span data-n="sidebar.purge.rate" data-fmt="signedpct1"></span>% with <span data-n="sidebar.purge.july_gone"></span> listings gone in July alone. That looks like a reclassification at the source, not a wave of closures.</p>
+  <p>Listings in three northern provinces — Phú Thọ, Thái Nguyên and Tuyên Quang — had the lowest net change, in percent. At least half of their combined net loss was in one category, "professional service", whose listings changed nationally by <span data-n="sidebar.purge.rate" data-fmt="signedpct1"></span>% with <span data-n="sidebar.purge.july_gone"></span> listings gone in July alone. The listings alone cannot say whether these were closures or a change in the source data.</p>
   <figure><div id="provinces" class="chart" role="img" aria-label="Provinces ranked by net change in listings, in percent"></div></figure>
   <!-- C8 -->
-  <p>In six tourist and downtown wards — Hoàn Kiếm, Sài Gòn, Bến Thành, Nha Trang, Xuân Hương–Đà Lạt and Vũng Tàu — hotels, restaurants and cafés lost a net <span data-n="sidebar.downtown.confirmed_net" data-fmt="abs1"></span> listings across the confirmed months; July alone accounted for a net <span data-n="sidebar.downtown.july_net" data-fmt="abs1"></span>. The newest month is still unconfirmed, so it is drawn hatched.</p>
-  <figure><div id="downtown" class="chart" role="img" aria-label="Hotel, restaurant and café listings in six downtown wards by month; newest month hatched"></div></figure>
+  <p>Hotel, restaurant and café listings in six tourist and downtown wards — Hoàn Kiếm, Sài Gòn, Bến Thành, Nha Trang, Xuân Hương–Đà Lạt and Vũng Tàu — lost a net <span data-n="sidebar.downtown.confirmed_net" data-fmt="abs1"></span> across the confirmed months, and a net <span data-n="sidebar.downtown.july_net" data-fmt="abs1"></span> in July. The newest month is still unconfirmed, so it is drawn hatched.</p>
+  <figure><figcaption class="axis">Hotel, restaurant and café listings in six wards</figcaption><div id="downtown" class="chart" role="img" aria-label="Hotel, restaurant and café listings in six downtown wards by month; newest month hatched"></div></figure>
 </aside>
 
 <section id="posters">
@@ -70,11 +71,11 @@
 
 <footer class="method">
   <h2>How this was counted</h2>
-  <p>A place <em>arrived</em> when it was absent from one Overture release and listed in the next two; it is <em>gone</em> when it was listed for two releases and then absent for two. One-month appearances and the newest, not-yet-confirmed month (<span data-n="edition.pending_month" data-fmt="month"></span>) are never counted as change. Counts are listings, not verified openings or closures. Rates compare net change with the first month and are not shown for fewer than 20 places.</p>
-  <p class="source">Edition: confirmed through <span data-n="edition.latest_confirmed" data-fmt="month"></span> · built <span data-n="built_at" data-fmt="text"></span>. Data: Overture Maps Foundation, places theme (CDLA-Permissive-2.0), mostly from Meta. Engine: vn-place-changes.</p>
+  <p>A listing <em>arrived</em> when it was absent from one Overture release and listed in the next two; it <em>left</em> (is counted as gone) when it was listed for two releases and then absent for two. One-month appearances and the newest, not-yet-confirmed month (<span data-n="edition.pending_month" data-fmt="month"></span>) are never counted as change. Counts are listings, not verified openings or closures: every number here describes what Overture lists for Vietnam, not what opened or closed there. Rates compare net change with the first month and are not shown for fewer than 20 listings.</p>
+  <p class="source">Edition: confirmed through <span data-n="edition.latest_confirmed" data-fmt="month"></span> · built <span data-n="built_at" data-fmt="text"></span>. Data: Overture Maps Foundation, places theme (CDLA-Permissive-2.0); the listings that changed came mostly from Meta. Engine: vn-place-changes.</p>
 </footer>
 </main>
 <script src="vendor/d3.v7.min.js"></script>
-<script type="module" src="story.js?v=0.4.1"></script>
+<script type="module" src="story.js?v=0.4.2"></script>
 </body>
 </html>

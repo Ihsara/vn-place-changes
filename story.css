@@ -12,7 +12,7 @@ h2 { font-weight: 600; font-size: 1.3rem; margin: 2.5rem 0 .6rem; }
 figure { margin: 1.4rem 0; }
 .chart svg { display: block; font: 400 13px "Be Vietnam Pro", sans-serif; font-variant-numeric: tabular-nums; }
 .num, [data-n] { font-variant-numeric: tabular-nums; }
-.note { fill: var(--muted); font-size: 12px; }
+figcaption.axis { margin-bottom: .3rem; font-size: .8rem; }
 .key::before { content: ""; display: inline-block; width: .8em; height: .8em; margin: 0 .35em 0 .9em; vertical-align: -.05em; }
 .key.arrived::before { background: var(--arrived); } .key.gone::before { background: var(--gone); }
 .key.unconfirmed::before { background: repeating-linear-gradient(45deg, var(--unconfirmed) 0 2px, transparent 2px 5px); outline: 1px solid var(--unconfirmed); }

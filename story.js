@@ -1,4 +1,4 @@
-import { fillSlots, fmt } from "./format.js?v=0.4.1";
+import { fillSlots, fmt } from "./format.js?v=0.4.2";
 const d3 = window.d3;
 const C = { arrived: "var(--arrived)", gone: "var(--gone)", ink: "var(--ink)", muted: "var(--muted)" };
 
@@ -30,7 +30,7 @@ function hero(el, st) {
   g.append("g").call(d3.axisLeft(y).ticks(5).tickFormat((v) => d3.format("~s")(Math.abs(v))));
 }
 
-function stockLine(el, series, label, zero = true) {
+function stockLine(el, series, zero = true) {
   const { g, w, h, hatch } = svg(el, 220);
   const x = d3.scalePoint(series.map((d) => d.month), [0, w]).padding(0.3);
   const y = zero
@@ -45,7 +45,6 @@ function stockLine(el, series, label, zero = true) {
     .attr("fill", (d) => (d.pending ? hatch : C.ink)).attr("stroke", (d) => (d.pending ? "var(--unconfirmed)" : "none"));
   g.append("g").attr("transform", `translate(0,${h})`).call(d3.axisBottom(x).tickFormat(monthLabel).tickSize(0));
   g.append("g").call(d3.axisLeft(y).ticks(4).tickFormat(d3.format("~s")));
-  g.append("text").attr("x", w).attr("y", -2).attr("text-anchor", "end").attr("class", "note").text(label);
 }
 
 function hbars(el, rows, value, color, fmtv, opts = {}) {
@@ -92,14 +91,14 @@ async function main() {
   check(st);
   fillSlots(document, st);
   hero(document.getElementById("hero"), st);
-  stockLine(document.getElementById("vape-line"), st.f2.series, "listings, confirmed (hatched = not yet)");
+  stockLine(document.getElementById("vape-line"), st.f2.series);
   hbars(document.getElementById("vape-provinces"), st.f2.provinces.filter((p) => p.name !== "rest" || p.arrived > 0)
         .map((p) => (p.name === "rest" ? { ...p, name: "Other provinces" } : p)),
         (d) => d.arrived, () => C.arrived, (v) => fmt(v, "int"));
   finance(document.getElementById("finance-chart"), st);
   flicker(document.getElementById("flicker"), st);
   provinces(document.getElementById("provinces"), st);
-  stockLine(document.getElementById("downtown"), st.sidebar.downtown.series, "hotels, restaurants, cafés in six wards", false);
+  stockLine(document.getElementById("downtown"), st.sidebar.downtown.series, false);
 }
 main().catch((e) => {
   document.body.insertAdjacentHTML("afterbegin", `<p class="error">This story could not load its data: ${e.message}</p>`);
